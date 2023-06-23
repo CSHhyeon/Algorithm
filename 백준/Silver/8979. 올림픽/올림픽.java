@@ -29,16 +29,11 @@ public class Main {
         else{
             int index = 1;
             for(int i = 1; i < N; i++){
-                if(arr[i][0] == K){
-                    if(arr[i - 1][1] == arr[i][1] && arr[i - 1][2] == arr[i][2] && arr[i - 1][3] == arr[i][3]) break;
-                    else{
-                        index++;
-                        break;
-                    }
+                if(arr[i - 1][1] != arr[i][1] || arr[i - 1][2] != arr[i][2] || arr[i - 1][3] != arr[i][3]){
+                    index++;
                 }
-                if(arr[i - 1][1] == arr[i][1] && arr[i - 1][2] == arr[i][2] && arr[i - 1][3] == arr[i][3]) continue;
 
-                index++;
+                if(arr[i][0] == K) break;
             }
 
             System.out.println(index);
