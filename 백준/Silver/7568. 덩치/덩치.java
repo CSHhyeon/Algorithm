@@ -22,8 +22,6 @@ public class Main {
             else return o2[0] - o1[0];
         });
 
-        int index = 1;
-        int temp = 1;
         int k = 0;
         person[0][3] = 1;
         for(int i = 1; i < N; i++){
