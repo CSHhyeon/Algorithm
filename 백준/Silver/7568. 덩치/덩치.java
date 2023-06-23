@@ -26,7 +26,6 @@ public class Main {
         person[0][3] = 1;
         for(int i = 1; i < N; i++){
             k = 0;
-            temp++;
             for(int j = 0; j < i; j++){
                 if(person[j][0] > person[i][0] && person[j][1] > person[i][1]) k++;
             }
